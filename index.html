@@ -5,28 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Semantics</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            /* text-align: center; */
+            font-size: 1.5em;
+            background-color: bisque;
+        }
+
+        header{
+            background-color: rgb(39, 36, 36);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main{
+            padding-top: 100px;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .questions{
+            width: 50%;
+            margin: auto;
+        }
+
+        .options{
+            /* text-align: center; */
+            width: 50%;
+            margin-left: 340px;
+            margin-top: 25px;
+        }
+
+        #button_area{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        button{
+            display: inline-block;
+            padding: 15px;
+            font-size: 25px;
+            color: white;
+            background-color: rgb(67, 99, 141);
+            border: none;
+            outline: none;
+            margin-top: 25px;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+       
+    </style>
 </head>
 <body>
-    <head>
+    <header>
         Quiz on important Facts
-    </head>
+    </header>
     <main>
-        <section>
+        <section class="questions">
             <p>
                 Which one of these is a JavaScript package manager?
             </p>
     
-            <input type="radio" id="a" name="question1">
-            <label for="a">a: Nodejs</label>
-    
-            <input type="radio" id="b" name="question1">
-            <label for="b">a: TypeScript</label>
-    
-            <input type="radio" id="c" name="question1">
-            <label for="c">c: npm</label>
+            <div class="options">
+                <input type="radio" id="a" name="question1">
+                <label for="a">a: Nodejs</label> <br>
+        
+                <input type="radio" id="b" name="question1">
+                <label for="b">a: TypeScript</label> <br>
+        
+                <input type="radio" id="c" name="question1">
+                <label for="c">c: npm</label>
+            </div>
         </section>
 
-        <section>
+        <section id="button_area">
             <button>Previous Question</button>
             <button>Previous Question</button>
         </section>
